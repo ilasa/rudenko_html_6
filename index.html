@@ -3,8 +3,354 @@
 <head>
     <meta charset="UTF-8">
     <title>Zazor</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+    <div class="wrapper">
+
+        <div class="main-wrapper">
+            <header>
+
+                <div class="header-wrapper">
+
+                    <address>
+                        <img class="phone" src="img/phone.png">
+
+                        <a class="phone-number" href="tel:+380441234567">(044)123-45-67</a>
+                        <a class="phone-number" href="tel:+380445678910">(044)567-89-10</a>
+                    </address>
+
+                    <div class="form-wrapper">
+                        <img class="authorization" src="img/authorization.png">
+
+                        <form action="#" method="post">
+                            <input class="clearfix" type="text" name="log_in" placeholder="логин" required>
+                            <input class="clearfix" type="password" name="password" placeholder="пароль" required>
+                            <button type="submit">Вход</button>
+                        </form>
+                        <div class="registration">
+                            <a class="check_in" href="#">Регистрация</a>
+                            <a class="forgot_password" href="#">Забыли пароль?</a>
+                        </div>
+                    </div>
+
+                    <div class="navi">
+                        <a class="home" href="#"><img src="img/home.png"></a>
+                        <a class="site-map" href="#"><img src="img/site-map.png"></a>
+                        <a class="letter" href="#"><img src="img/letter.png"></a>
+                    </div>
+
+                </div>
+                <img class="logo" src="img/logo-site.jpg">
+
+                <nav class="menu-wrapper">
+                    <ul class="menu">
+                        <li class="menu_item"><a class="menu_link" href="#">О компании</a></li>
+                        <li class="menu_item"><a class="menu_link" href="#">Оплата</a></li>
+                        <li class="menu_item"><a class="menu_link" href="#">Доставка</a></li>
+                        <li class="menu_item"><a class="menu_link" href="#">Статьи</a></li>
+                        <li class="menu_item"><a class="menu_link" href="#">Контакты</a></li>
+                        <li class="basket"><a class="menu_link" href="#"><img src="img/case.png"></a></li>
+                        <li class="goods"><p>товаров:</p><span class="quantity">0</span>
+                            <p>на сумму:</p><span class="quantity">0,00 грн</span></li>
+                    </ul>
+                </nav>
+
+            </header>
+
+            <main>
+                <div class="select clearfix">
+
+                    <div class="left-select">
+                        <form class="tire_wheel" action="#" method="post">
+                            <div class="form_header clearfix">
+                                <span class="left">Диски:</span>
+                                <span class="center">Поиск по автомобилю</span>
+                                <span class="right">Шины:</span>
+                            </div>
+                            <div class="tire table">
+                                <p class="select__text">Марка <span class="select__mintext">авто:</span></p>
+                                <p class="select__text">Модель <span class="select__mintext">автомобиля:</span></p>
+                                <p class="select__text">Год выпуска <span class="select__mintext">автомобиля:</span></p>
+                                <p class="select__text">Комплектация:</p>
+                            </div>
+
+                            <div class="tire__select table">
+                                <select name="car_mark"></select>
+                                <select name="car_model"></select>
+                                <select class="car__year" name="car_year"></select>
+                                <select name="car_equipment"></select>
+                            </div>
+
+                            <div class="wheel table">
+                                <p class="select__text">Марка <span class="select__mintext">авто:</span></p>
+                                <p class="select__text">Модель <span class="select__mintext">автомобиля:</span></p>
+                                <p class="select__text">Год выпуска <span class="select__mintext">автомобиля:</span></p>
+                                <p class="select__text">Комплектация:</p>
+                            </div>
+
+                            <div class="wheel__select table">
+                                <select name="car_mark"></select>
+                                <select name="car_model"></select>
+                                <select class="car__year" name="car_year"></select>
+                                <select name="car_equipment"></select>
+                            </div>
+
+                            <div class="search">
+                                <input type="submit" value="ПОИСК...">
+                            </div>
+                        </form>
+
+                    </div>
+
+
+                    <div class="middle-select">
+
+                        <form class="middle-select_wheel" action="#" method="post">
+                            <div class="form_header clearfix">
+                                <span class="wheel_search">Поиск шин</span>
+                            </div>
+
+                            <div class="middle_wheel">
+                                <div class="middle__size">
+                                    <span class="inline select__text">Размер:</span>
+
+                                    <select class="inline" name="wheel__size1">
+                                        <option value="wheel__size_145">145</option>
+                                        <option value="wheel__size_146">146</option>
+                                        <option value="wheel__size_147">147</option>
+                                    </select>
+
+                                    <span class="inline select__text">/</span>
+                                    <select class="inline" name="size2">
+                                        <option value="wheel__size"></option>
+                                    </select>
+                                </div>
+
+                                <div class="radius">
+                                    <span>R</span>
+                                    <select name="wheel__size_R">
+                                        <option value="wheel__size_R_12">12</option>
+                                    </select>
+                                </div>
+                                <div class="season">
+                                    <span class="select__text">Сезон:</span>
+                                    <input class="summer" type="checkbox" name="summer" id="summer-field">
+                                    <label class="season-field summer" for="summer-field">лето</label>
+                                    <br>
+                                    <input class="winter" type="checkbox" name="winter" id="winter-field">
+                                    <label class="season-field" for="winter-field">зима</label>
+                                    <br>
+                                    <input class="summer_winter" type="checkbox" name="summer_winter"
+                                           id="summer_winter-field">
+                                    <label class="season-field" for="summer_winter-field">всесез</label>
+                                </div>
+                            </div>
+
+                            <div class="search">
+                                <input type="submit" value="ПОИСК...">
+                            </div>
+                        </form>
+
+                    </div>
+
+
+                    <div class="right-select clearfix">
+                        <form class="right-select_wheel" action="#" method="post">
+                            <div class="form_header clearfix">
+                                <span class="tire_search_header">Поиск дисков</span>
+                            </div>
+
+                            <div class="tire_search">
+                                <p class="select__text tire-diametr">Диаметр<span
+                                        class="select__mintext block">диска:</span></p>
+                                <p class="select__text number">Количество<span class="select__mintext">крепёжных отверствий:</span>
+                                </p>
+                                <p class="select__text diametr">Диаметр<span class="select__mintext">расположения крепёжных отверствий:</span>
+                                </p>
+                            </div>
+
+                            <div class="tire_search__select">
+                                <select name="tire-diametr"></select>
+                                <select class="number" name="number"></select>
+                                <select name="diametr"></select>
+                            </div>
+
+                            <div class="right_diametr">
+                                <p class="select__text right__paragaph">ДЦО</p>
+                                <span class="select__mintext">(диаметр центрального отверствия):</span>
+                                <select class="right__select" name="right_diametr">
+                                    <option value="right_diametr_12">12</option>
+                                    <option value="right_diametr_13">13</option>
+                                    <option value="right_diametr_14">14</option>
+                                </select>
+
+                                <p class="select__text right__paragaph">ЕТ<span
+                                        class="select__mintext">(вылет диска):</span></p>
+                                <select class="right__select" name="right_diametr">
+                                    <option value="right_disk-crash_12">12</option>
+                                    <option value="right_disk-crash_13">13</option>
+                                    <option value="right_disk-crash_14">14</option>
+                                </select>
+
+                            </div>
+
+                            <div class="search">
+                                <input type="submit" value="ПОИСК...">
+                            </div>
+
+
+                        </form>
+                    </div>
+
+
+                </div>
+
+
+                <div class="container clearfix">
+
+                    <aside class="left-sidebar">
+                        <h2 class="catalog">Каталог продукции:</h2>
+                        <div class="catalog__tire">
+                            <h3>ШИНЫ</h3>
+                            <ul class="catalog_menu">
+                                <li><a>Наименование 1</a></li>
+                                <li><a>Наименование 2</a></li>
+                                <li><a>Наименование 3</a></li>
+                                <li><a>Наименование 4</a></li>
+                            </ul>
+                        </div>
+                        <div class="catalog__wheel">
+                            <h3>ДИСКИ</h3>
+                            <ul class="catalog_menu">
+                                <li><a>Наименование 1</a></li>
+                                <li><a>Наименование 2</a></li>
+                                <li><a>Наименование 3</a></li>
+                                <li><a>Наименование 4</a></li>
+                            </ul>
+                        </div>
+                        <div class="catalog__bolt">
+                            <h3>БОЛТЫ</h3>
+                            <ul class="catalog_menu">
+                                <li><a>Наименование 1</a></li>
+                                <li><a>Наименование 2</a></li>
+                                <li><a>Наименование 3</a></li>
+                                <li><a>Наименование 4</a></li>
+                            </ul>
+                        </div>
+
+                    </aside>
+
+                    <acide class="right-sidebar">
+                        <h2 class="catalog brends">Бренды:</h2>
+                        <form class="form-catalogwrapper" action="#" method="post">
+                            <h3>Шины</h3>
+                            <div>
+                                <input class="brend" type="checkbox" name="brend_1" id="tire_brend1">
+                                <label for="tire_brend1">Бренд 1</label>
+                            </div>
+                            <div>
+                                <input class="brend" type="checkbox" name="brend_2" id="tire_brend2">
+                                <label for="tire_brend2">Бренд 2</label>
+                            </div>
+
+                            <div>
+                                <input class="brend" type="checkbox" name="brend_3" id="tire_brend3">
+                                <label for="tire_brend3">Бренд 3</label>
+                            </div>
+
+                            <h3 class="right-sidebar_wheels">Диски</h3>
+                            <div><input class="brend" type="checkbox" name="brend_1" id="wheel_brend1">
+                                <label for="wheel_brend1">Бренд 1</label>
+                            </div>
+                            <div>
+                                <input class="brend" type="checkbox" name="brend_2" id="wheel_brend2">
+                                <label for="wheel_brend2">Бренд 2</label>
+                            </div>
+                            <div>
+                                <input class="brend" type="checkbox" name="brend_3" id="wheel_brend3">
+                                <label for="wheel_brend3">Бренд 3</label>
+                            </div>
+                            <br>
+                            <input type="submit" value="Выбрать">
+                        </form>
+                    </acide>
+
+                    <section class="main-content">
+                        <div class="row row_first">
+                            <div class="row__wrapper"><h3>Goodyear</h3><span>Ultra Grip Extrime</span>
+                                <figure><img src="img/googyear.png" alt="wheel"></figure>
+                                <figcaption>90.00 <span>грн.</span></figcaption>
+                            </div>
+                            <div class="row__wrapper">
+                                <h3>Nokian</h3><span>Hakkapeliitta R</span></h3>
+                                <figure><img src="img/nokian.png" alt="wheel"></figure>
+                                <figcaption>115.00 <span>грн.</span></figcaption>
+                            </div>
+                            <div class="row__wrapper">
+                                <h3>Hankook</h3><span>K 708 155/65 R14</span>
+                                <figure><img src="img/hankook.png" alt="wheel"></figure>
+                                <figcaption>393.00 <span>грн.</span></figcaption>
+                            </div>
+                        </div>
+                        <div class="row row_middle">
+                            <div class="row__wrapper"><h3>Goodyear</h3><span>Ultra Grip Extrime</span>
+                                <figure><img src="img/googyear.png" alt="wheel"></figure>
+                                <figcaption>90.00 <span>грн.</span></figcaption>
+                            </div>
+                            <div class="row__wrapper">
+                                <h3>Nokian</h3><span>Hakkapeliitta R</span></h3>
+                                <figure><img src="img/nokian.png" alt="wheel"></figure>
+                                <figcaption>115.00 <span>грн.</span></figcaption>
+                            </div>
+                            <div class="row__wrapper">
+                                <h3>Hankook</h3><span>K 708 155/65 R14</span>
+                                <figure><img src="img/hankook.png" alt="wheel"></figure>
+                                <figcaption>393.00 <span>грн.</span></figcaption>
+                            </div>
+                        </div>
+
+                        <div class="row row_last">
+
+                            <div class="row__wrapper"><h3>Goodyear</h3><span>Ultra Grip Extrime</span>
+                                <figure><img src="img/googyear.png" alt="wheel"></figure>
+                                <figcaption>90.00 <span>грн.</span></figcaption>
+                            </div>
+                            <div class="row__wrapper">
+                                <h3>Nokian</h3><span>Hakkapeliitta R</span></h3>
+                                <figure><img src="img/nokian.png" alt="wheel"></figure>
+                                <figcaption>115.00 <span>грн.</span></figcaption>
+                            </div>
+                            <div class="row__wrapper">
+                                <h3>Hankook</h3><span>K 708 155/65 R14</span>
+                                <figure><img src="img/hankook.png" alt="wheel"></figure>
+                                <figcaption>393.00 <span>грн.</span></figcaption>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="footer_logo">
+                    <img src="img/footer_logo.png">
+                </div>
+            </main>
+            <footer>
+
+                <nav>
+                    <ul class="menu_footer">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Статьи</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <p class="made_site"><a href="#">Создание сайта</a> &reg; Global Vision</p>
+
+            </footer>
+
+        </div>
+    </div>
 </body>
 </html>
